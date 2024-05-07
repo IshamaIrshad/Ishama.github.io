@@ -1,0 +1,205 @@
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+
+.header {
+  background-image: linear-gradient(to right, rgb(69, 52, 69), rgb(38, 5, 62), rgb(39, 39, 79), rgb(35, 59, 35), rgb(79, 79, 26), rgb(73, 57, 26), rgb(65, 17, 17));
+  color: white;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.company-name{
+  font-family: "Briem Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.header nav ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+
+/* Updated Book Now Button CSS */
+
+.book_btn {
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  transition: background 0.4s ease-in-out;
+  padding: 10px 20px;
+  margin-right: 20px; /* Adjust the margin as needed */
+}
+
+.book_btn:hover {
+  background-position: right;
+  text-decoration: none;
+  color: #fff;
+}
+
+.book_btn::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  bottom: -5px;
+  right: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 40px;
+  opacity: 0;
+  transition: 1s;
+}
+
+.book_btn:hover::before {
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+
+
+/* Contact section styles */
+.contact {
+  background-image: linear-gradient(to right, rgb(92, 69, 92), rgb(49, 67, 49), rgb(93, 85, 68));
+  padding: 50px 0;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.contact p{
+  color: #fff;
+  font-size: 18px;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+ 
+}
+
+.contact form {
+  margin-top: 20px;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.contact form button:hover {
+  background-color: #e64d00;
+}
+
+
+
+.feedback {
+  background-color: #ddc2c2;
+  padding: 50px 0;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.feedback h2 {
+  margin-bottom: 20px;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36PX;
+}
+
+.feedback form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.feedback input,
+.feedback textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.feedback button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.feedback button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,385 @@
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+
+.header {
+  background-image: linear-gradient(to right, rgb(69, 52, 69), rgb(38, 5, 62), rgb(39, 39, 79), rgb(35, 59, 35), rgb(79, 79, 26), rgb(73, 57, 26), rgb(65, 17, 17));
+  color: white;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.company-name{
+  font-family: "Briem Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Updated Book Now Button CSS */
+
+.book_btn {
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  transition: background 0.4s ease-in-out;
+  padding: 10px 20px;
+  margin-right: 20px; /* Adjust the margin as needed */
+}
+
+.book_btn:hover {
+  background-position: right;
+}
+
+.book_btn::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  bottom: -5px;
+  right: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 40px;
+  opacity: 0;
+  transition: 1s;
+}
+
+.book_btn:hover::before {
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+
+
+
+.booking {
+  padding: 2rem;
+  margin: auto;
+  background: url('book\ background.jpg') no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 80px;
+}
+
+.booking .heading-title {
+  font-size: 4.5rem;
+  color: #030101;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-family: "Jersey 15 Charted", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.booking .book-form .flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.booking .book-form .flex .inputBox {
+  flex: 1 1 41rem;
+}
+
+.booking .book-form .flex .inputBox input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #555;
+  border: 1px solid #ccc;
+}
+
+.booking .book-form .flex .inputBox input:focus {
+  outline: none;
+  border-color: #021830;
+}
+
+.booking .book-form .flex .inputBox span {
+  font-size: 1.2rem;
+  color: #0a0a0a;
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.booking .book-form .btn.btn-primary {
+  margin-top: 2rem;
+  padding: 0.8rem 2rem;
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #fff;
+  background-color: #f1721e;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 2;
+}
+
+.booking .book-form .btn.btn-primary:hover {
+  background-color: #e5c122;
+}
+
+
+
+
+footer{
+  background-color: #111;
+  
+}
+.footerContainer{
+  width: 100%;
+  padding: 40px 30px 20px ;
+}
+
+
+.socialIcons{
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a{
+  text-decoration: none;
+  padding:  10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons a i{
+  font-size: 2em;
+  color: black;
+  opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+  background-color: #111;
+  transition: 0.5s;
+}
+.socialIcons a:hover i{
+  color: white;
+  transition: 0.5s;
+}
+.footerNav{
+  margin: 30px 0;
+}
+.footerNav ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.footerNav ul li a{
+  color:white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+  opacity: 1;
+}
+.footerBottom{
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+.footerBottom p{
+  color: white;
+}
+.designer{
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+@media (max-width: 700px){
+  .footerNav ul{
+      flex-direction: column;
+  } 
+  .footerNav ul li{
+      width:100%;
+      text-align: center;
+      margin: 10px;
+  }
+  .socialIcons a{
+      padding: 8px;
+      margin: 4px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.btn-book {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-book:hover {
+  background-color: #0056b3;
+}
+
+.btn-book:active {
+  transform: scale(0.98);
+}
+
+.btn-book:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.4);
+}
+
+.btn-book:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+*/
+/*
+.confirmation {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.confirmation.show {
+  display: flex;
+}
+
+.confirmation .check {
+  margin-right: 10px;
+  color: #01ad0a;
+}
+
+.confirmation .message {
+  font-size: 1.5rem;
+  color: #333;
+}
+*/
+
+
+/*
+.hide{
+  display: none;
+}
+
+.rotateIn{
+  animation: rotateIn 0.5s forwards;
+}
+
+.fadeIn{
+  animation: fadeIn 1.3s 0.5s forwards;
+}
+
+@keyframes rotateIn{
+0%{
+  opacity: 0;
+  scale: 0.5;
+  transform: rotate(0deg);
+  filter: blur(5px);
+}
+50%{
+  opacity: 1;
+  scale: 1.2;
+}
+90%{
+  opacity: 1;
+  scale: 1;
+  transform: rotate(360deg);
+}
+100%{
+  opacity: 1;
+  transform: translateX(-60px);
+}
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+*/
+
+
+
+
