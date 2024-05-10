@@ -667,3 +667,134 @@ footer{
       margin: 4px;
   }
 }
+
+
+
+@media screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .book_btn {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .hero {
+    height: 400px;
+  }
+
+  .slide-content h2 {
+    font-size: 24px;
+  }
+
+  .slide-content p {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+  }
+
+  .destinations {
+    padding: 50px 0;
+  }
+
+  .destination-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .destination-info h3 {
+    font-size: 20px;
+  }
+
+  .destination-info p {
+    font-size: 14px;
+  }
+
+  .btn-explore {
+    padding: 8px 16px;
+  }
+
+  .activities {
+    padding: 30px 0;
+  }
+
+  .activity-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .activity-info h3 {
+    font-size: 18px;
+  }
+
+  .activity-info p {
+    font-size: 14px;
+  }
+
+  .activity-info a {
+    padding: 6px 12px;
+  }
+
+  .gallery-wrapper {
+    font-size: 18px;
+  }
+
+  .gallery {
+    padding-inline: 0.5rem;
+  }
+
+  .image-container {
+    height: 300px;
+  }
+
+  .about-section {
+    padding-bottom: 50px;
+  }
+
+  .read-more-btn {
+    padding: 8px 16px;
+  }
+
+  .traveler-reviews {
+    padding: 50px 0;
+  }
+
+  .review {
+    min-height: auto;
+  }
+
+  .review p {
+    font-size: 14px;
+  }
+
+  .reviewer {
+    font-size: 14px;
+  }
+
+  .footerContainer {
+    padding: 20px 10px;
+  }
+
+  .socialIcons a {
+    padding: 6px;
+    margin: 4px;
+  }
+
+  .footerNav ul li a {
+    margin: 10px;
+    font-size: 1em;
+  }
+}
